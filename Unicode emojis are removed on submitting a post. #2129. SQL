@@ -1,11 +1,21 @@
-USE `database_name`
+-- *******************************************************
+-- *******************************************************
+--    Please, REPLACE `database_name` with your database
+-- *******************************************************
+-- *******************************************************
 
+-- NOTE: some table maybe missing depending of modules active
+
+-- select DB
+USE `database_name`;
+
+-- alter DB
 ALTER DATABASE
-    ``database_name`
+    `database_name`
     CHARACTER SET = utf8mb4
     COLLATE = utf8mb4_unicode_ci;
 
-
+-- alter Humhub tables
 ALTER TABLE
 	`activity`
 	CONVERT TO CHARACTER SET utf8mb4
